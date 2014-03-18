@@ -4,7 +4,7 @@
 name:                s3-simple
 version:             0.1.0.3
 synopsis:            A simple s3 library that uses hs3
--- description:         
+description:         Wraps an S3 library in an easy to use interface that doesn't change
 license:             BSD3
 license-file:        LICENSE
 author:              Kevin Cotrone
@@ -12,11 +12,11 @@ maintainer:          kevincotrone@gmail.com
 -- copyright:           
 category:            Network
 build-type:          Simple
-extra-source-files:  Network.AWS.S3Simple
+Exposed-Modules:     Network.AWS.S3Simple
                     ,Network.AWS.S3SimpleAdapters
                     ,Network.AWS.S3SimpleTypes
                     ,Test  
-cabal-version:       >=1.10
+cabal-version:       >=1.18
 
 Executable           test
   hs-source-dirs:    src
